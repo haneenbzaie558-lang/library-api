@@ -12,7 +12,7 @@ Route::get('/user', function (Request $request) {
 use App\Http\Controllers\BookController;
 
 // Route::get('/books/{id}', [BookController::class, 'show']);
-// Route::post('/books', [BookController::class, 'store']);
+//test
 Route::apiResource('books', BookController::class);
 Route::apiResource('authors', \App\Http\Controllers\AuthorController::class);
 Route::apiResource('borrowings', \App\Http\Controllers\BorrowingController::class);
