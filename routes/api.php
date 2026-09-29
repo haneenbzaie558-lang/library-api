@@ -12,7 +12,6 @@ Route::get('/user', function (Request $request) {
 use App\Http\Controllers\BookController;
 
 // Route::get('/books/{id}', [BookController::class, 'show']);
-//test
 Route::apiResource('books', BookController::class);
 Route::apiResource('authors', \App\Http\Controllers\AuthorController::class);
 Route::apiResource('borrowings', \App\Http\Controllers\BorrowingController::class);
